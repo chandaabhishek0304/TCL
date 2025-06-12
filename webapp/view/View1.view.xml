@@ -1,0 +1,804 @@
+<mvc:View
+    controllerName="com.fiori.iteos.objectpage.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:Uxap="sap.uxap"
+    xmlns:m="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns:fx="sap.f"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <!-- Section 1 Code here -->
+        <Uxap:ObjectPageLayout
+            id="ObjectPageLayout"
+            enableLazyLoading="true"
+            upperCaseAnchorBar="false"
+        >
+            <Uxap:headerTitle>
+                <Uxap:ObjectPageDynamicHeaderTitle>
+                    <Uxap:heading>
+                        <m:Title text="{i18n>tcllayout}" />
+                    </Uxap:heading>
+
+                    <!-- <Uxap:snappedTitleOnMobile>
+                        <m:Title text="{i18n>tcllayout}" />
+                    </Uxap:snappedTitleOnMobile> -->
+
+                    <Uxap:actions>
+                        <m:Button
+                            text="Edit"
+                            type="Emphasized"
+                        />
+                        <m:Button
+                            type="Transparent"
+                            text="Delete"
+                        />
+                        <m:Button
+                            type="Transparent"
+                            text="Copy"
+                        />
+                        <m:OverflowToolbarButton
+                            icon="sap-icon://action"
+                            type="Transparent"
+                            text="Share"
+                            tooltip="action"
+                        />
+                    </Uxap:actions>
+                </Uxap:ObjectPageDynamicHeaderTitle>
+            </Uxap:headerTitle>
+
+            <!-- OVERVIEW -->
+
+            <Uxap:sections>
+                <Uxap:ObjectPageSection id="ObjectPageSectionOne">
+                    <Uxap:ObjectPageSubSection
+                        id="ObjectPageSubSectionOne"
+                        title="{i18n>overview}"
+                        mode="Expanded"
+                        titleUppercase="false"
+                    >
+                        <Uxap:blocks>
+                            <f:SimpleForm
+                                id="SimpleFormDisplay354"
+                                editable="false"
+                                layout="ResponsiveGridLayout"
+                                labelSpanXL="4"
+                                labelSpanL="4"
+                                labelSpanM="12"
+                                labelSpanS="12"
+                                adjustLabelSpan="false"
+                                emptySpanXL="0"
+                                emptySpanL="0"
+                                emptySpanM="0"
+                                emptySpanS="0"
+                                columnsXL="2"
+                                columnsL="2"
+                                columnsM="2"
+                                singleContainerFullSize="false"
+                            >
+                                <f:content>
+                                    <core:Title id="title1" />
+                                    <Label
+                                        id="labelTclNo"
+                                        text="{i18n>tclno}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="tclnoInput"
+                                        value="{}"
+                                    />
+                                    <Label
+                                        id="labelRequestdate"
+                                        text="{i18n>requestdate}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="requestdateInput"
+                                        value="{}"
+                                    />
+                                    <Label
+                                        id="labelbusinessdivision"
+                                        text="{i18n>businessdivision}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="businessDivisionInput"
+                                        value="{}"
+                                    />
+                                    <Label
+                                        id="labeldistributionChanel"
+                                        text="{i18n>distributionchanel}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="distributionChanelInput"
+                                        value="{}"
+                                    />
+                                    <Label
+                                        id="labelsalesGroup"
+                                        text="{i18n>salesgroup}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="salesGroupInput"
+                                        value="{}"
+                                    />
+                                    <Label
+                                        id="labelsalesOffice"
+                                        text="{i18n>salesoffice}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="salesOfficeInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelCustomer"
+                                        text="{i18n>customer}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="customerInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelRequester"
+                                        text="{i18n>requester}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="requesterInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelEbdtm"
+                                        text="{i18n>ebdtm}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="ebdtmInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelEcdtm"
+                                        text="{i18n>ecdtm}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="ecdtmInput"
+                                        value="{}"
+                                    />
+                                    <Label
+                                        id="labelcls"
+                                        text="{i18n>cls}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="clsInput"
+                                        value="{}"
+                                    />
+
+                                    <core:Title id="title2" />
+
+                                    <Label
+                                        id="labelJustification"
+                                        text="{i18n>justification}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="justificationInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelStartDate"
+                                        text="{i18n>startdate}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="startdateInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelEndDate"
+                                        text="{i18n>enddate}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="enddateInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelLimitDays"
+                                        text="{i18n>limitdays}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="limitdaysInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelFileUpload"
+                                        text="{i18n>fileupload}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="fileuploadInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelRequestStatus"
+                                        text="{i18n>requeststatus}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="requeststatusInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelMessageFromSap"
+                                        text="{i18n>mfs}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="messagefromsapInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelPendingWith"
+                                        text="{i18n>pendingwith}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="pendingwithInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelStage"
+                                        text="{i18n>stage}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="StageInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelComplettiondate"
+                                        text="{i18n>complettiondate}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="complettiondateInput"
+                                        value="{}"
+                                    />
+                                </f:content>
+                            </f:SimpleForm>
+                        </Uxap:blocks>
+                    </Uxap:ObjectPageSubSection>
+                </Uxap:ObjectPageSection>
+
+                <!-- Historical Sales -->
+
+                <Uxap:ObjectPageSection
+                    id="ObjectPageSectionTwo"
+                    title="{i18n>historicalsales}"
+                >
+                    <Uxap:ObjectPageSubSection
+                        id="ObjectPageSubSectionTwo"
+                        title="{i18n>historicalsales}"
+                        mode="Expanded"
+                        titleUppercase="false"
+                    >
+                        <Uxap:blocks>
+                            <Table
+                                id="tableSectionTwo"
+                                inset="false"
+                                items="{helper>/tableData}"
+                            >
+                                <columns>
+                                    <Column>
+                                        <Text text="{i18n>date}" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="{i18n>currency}" />
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem>
+                                        <cells>
+                                            <Text text="{helper>date}" />
+                                            <Text text="{helper>currency}" />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </Uxap:blocks>
+                    </Uxap:ObjectPageSubSection>
+                </Uxap:ObjectPageSection>
+
+
+
+                
+                <!-- OutStanding Information -->
+
+                <Uxap:ObjectPageSection id="objectpagesectionOutstandingInformation" title="{i18n>osi}">
+                    <Uxap:ObjectPageSubSection id="objectpagesubsectionosi" title="{i18n>osi}">
+                        <Uxap:blocks>
+
+
+                         <Table
+                                id="tableSectionOsi"
+                                inset="false"
+                                items="{helper>/tableData}"
+                            >
+                                <columns>
+                                    <Column>
+                                        <Text text="{i18n>asondate}" />
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem>
+                                        <cells>
+                                            <Text text="{helper>Date}" />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                       </Uxap:blocks>   
+                   </Uxap:ObjectPageSubSection>
+
+
+               </Uxap:ObjectPageSection>
+
+
+
+
+
+
+                <!-- TCL HISTORY -->
+
+                <Uxap:ObjectPageSection
+                    id="ObjectPageSectionThree"
+                    title="{i18n>tclhistory}"
+                >
+                    <Uxap:ObjectPageSubSection
+                        id="ObjectPageSubSectionThree"
+                        title="{i18n>tclhistory}"
+                        mode="Expanded"
+                        titleUppercase="false"
+                    >
+                        <Uxap:blocks>
+                            <Table
+                                id="tableSectionThree"
+                                inset="false"
+                                items="{helper>/tableData}"
+                            >
+                                <columns>
+                                    <Column>
+                                        <Text
+                                            text="{i18n>creditlimitrequest}"
+                                        />
+                                    </Column>
+                                    <Column>
+                                        <Text text="{i18n>requester}" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="{i18n>startdate}" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="{i18n>enddate}" />
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem>
+                                        <cells>
+                                            <Text
+                                                text="{helper>creditlimitrequest}"
+                                            />
+                                            <Text text="{helper>requester}" />
+                                            <Text text="{helper>startdate}" />
+                                            <Text text="{helper>enddate}" />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </Uxap:blocks>
+                    </Uxap:ObjectPageSubSection>
+                </Uxap:ObjectPageSection>
+
+                <!-- Approval Information -->
+                <Uxap:ObjectPageSection
+                    id="objectPageSectionApprovalInformation"
+                    title="{i18n>approvalInformation}"
+                >
+                    <!-- RM Information -->
+
+                    <Uxap:ObjectPageSubSection
+                        id="ObjectPageSubSectionEight"
+                        title="{i18n>rminformation}"
+                        mode="Expanded"
+                        titleUppercase="false"
+                    >
+                        <Uxap:blocks>
+                            <f:SimpleForm
+                                id="SimpleFormDisplay359"
+                                editable="false"
+                                layout="ResponsiveGridLayout"
+                                labelSpanXL="4"
+                                labelSpanL="4"
+                                labelSpanM="12"
+                                labelSpanS="12"
+                                adjustLabelSpan="false"
+                                emptySpanXL="0"
+                                emptySpanL="0"
+                                emptySpanM="0"
+                                emptySpanS="0"
+                                columnsXL="2"
+                                columnsL="2"
+                                columnsM="2"
+                                singleContainerFullSize="false"
+                            >
+                                <f:content>
+                                    <core:Title id="title7" />
+
+                                    <Label
+                                        id="labelrminformation"
+                                        text="{i18n>rm}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="rminformationinput"
+                                        value=""
+                                    />
+
+                                    <Label
+                                        id="labeltclsbr"
+                                        text="{i18n>tclsbr}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="tclsbrinput"
+                                        value=""
+                                    />
+
+                                    <Label
+                                        id="labelsrbr"
+                                        text="{i18n>srbr}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="srbrinput"
+                                        value=""
+                                    />
+                                </f:content>
+                            </f:SimpleForm>
+                        </Uxap:blocks>
+                    </Uxap:ObjectPageSubSection>
+
+                    <!-- RCM Information -->
+
+                    <Uxap:ObjectPageSubSection
+                        id="ObjectPageSubSectionNine"
+                        title="{i18n>rcminformation}"
+                        mode="Expanded"
+                        titleUppercase="false"
+                    >
+                        <Uxap:blocks>
+                            <f:SimpleForm
+                                id="SimpleFormDisplay360"
+                                editable="false"
+                                layout="ResponsiveGridLayout"
+                                labelSpanXL="4"
+                                labelSpanL="4"
+                                labelSpanM="12"
+                                labelSpanS="12"
+                                adjustLabelSpan="false"
+                                emptySpanXL="0"
+                                emptySpanL="0"
+                                emptySpanM="0"
+                                emptySpanS="0"
+                                columnsXL="2"
+                                columnsL="2"
+                                columnsM="2"
+                                singleContainerFullSize="false"
+                            >
+                                <f:content>
+                                    <core:Title id="title8" />
+
+                                    <Label
+                                        id="labelrcminformation"
+                                        text="{i18n>rcm}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="rcminformationinput"
+                                        value=""
+                                    />
+
+                                    <Label
+                                        id="labeltclsbrc"
+                                        text="{i18n>tclsbrc}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="tclsbrcinput"
+                                        value=""
+                                    />
+                                </f:content>
+                            </f:SimpleForm>
+                        </Uxap:blocks>
+                    </Uxap:ObjectPageSubSection>
+
+                    <!-- Zonal Head Information -->
+
+                    <Uxap:ObjectPageSubSection
+                        id="ObjectPageSubSectionSix"
+                        mode="Expanded"
+                        title="{i18n>zonalhead}"
+                        titleUppercase="false"
+                    >
+                        <Uxap:blocks>
+                            <f:SimpleForm
+                                id="SimpleFormDisplay358"
+                                editable="false"
+                                layout="ResponsiveGridLayout"
+                                labelSpanXL="4"
+                                labelSpanL="4"
+                                labelSpanM="12"
+                                labelSpanS="12"
+                                adjustLabelSpan="false"
+                                emptySpanXL="0"
+                                emptySpanL="0"
+                                emptySpanM="0"
+                                emptySpanS="0"
+                                columnsXL="2"
+                                columnsL="2"
+                                columnsM="2"
+                                singleContainerFullSize="false"
+                            >
+                                <f:content>
+                                    <core:Title id="title6" />
+
+                                    <Label
+                                        id="labelZonalhead"
+                                        text="{i18n>zonalhead}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="zonalheadInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labeltclsbzh"
+                                        text="{i18n>tclsbzh}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="tclsbzhInputone"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelsrbzh"
+                                        text="{i18n>srbzh}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="srbzhInputone"
+                                        value="{}"
+                                    />
+                                </f:content>
+                            </f:SimpleForm>
+                        </Uxap:blocks>
+                    </Uxap:ObjectPageSubSection>
+
+                    <!-- country Head Infor mation -->
+
+                    <Uxap:ObjectPageSubSection
+                        id="ObjectPageSubSectionFive"
+                        mode="Expanded"
+                        title="{i18n>countryheadinformation}"
+                        titleUppercase="false"
+                    >
+                        <Uxap:blocks>
+                            <f:SimpleForm
+                                id="SimpleFormDisplay356"
+                                editable="false"
+                                layout="ResponsiveGridLayout"
+                                labelSpanXL="4"
+                                labelSpanL="4"
+                                labelSpanM="12"
+                                labelSpanS="12"
+                                adjustLabelSpan="false"
+                                emptySpanXL="0"
+                                emptySpanL="0"
+                                emptySpanM="0"
+                                emptySpanS="0"
+                                columnsXL="2"
+                                columnsL="2"
+                                columnsM="2"
+                                singleContainerFullSize="false"
+                            >
+                                <f:content>
+                                    <core:Title id="title4" />
+
+                                    <Label
+                                        id="labelcountryhead"
+                                        text="{i18n>countryhead}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="countryheadInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelTclsbcoone"
+                                        text="{i18n>tclsbcoh}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="tclsbcohInputone"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelSrbchone"
+                                        text="{i18n>srbcoh}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="srbcohInputone"
+                                        value="{}"
+                                    />
+                                </f:content>
+                            </f:SimpleForm>
+                        </Uxap:blocks>
+                    </Uxap:ObjectPageSubSection>
+
+                    <!-- Commercial Head Information -->
+                    <Uxap:ObjectPageSubSection
+                        id="ObjectPageSubSectionFour"
+                        mode="Expanded"
+                        title="{i18n>commercialheadi}"
+                        titleUppercase="false"
+                    >
+                        <Uxap:blocks>
+                            <f:SimpleForm
+                                id="SimpleFormDisplay355"
+                                editable="false"
+                                layout="ResponsiveGridLayout"
+                                labelSpanXL="4"
+                                labelSpanL="4"
+                                labelSpanM="12"
+                                labelSpanS="12"
+                                adjustLabelSpan="false"
+                                emptySpanXL="0"
+                                emptySpanL="0"
+                                emptySpanM="0"
+                                emptySpanS="0"
+                                columnsXL="2"
+                                columnsL="2"
+                                columnsM="2"
+                                singleContainerFullSize="false"
+                            >
+                                <f:content>
+                                    <core:Title id="title3" />
+
+                                    <Label
+                                        id="labelComercialHead"
+                                        text="{i18n>commercialhead}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="commercialheadInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelTclsbch"
+                                        text="{i18n>tclsbch}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="tclsbchInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelSrbch"
+                                        text="{i18n>srbch}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="srbchInput"
+                                        value="{}"
+                                    />
+                                </f:content>
+                            </f:SimpleForm>
+                        </Uxap:blocks>
+                    </Uxap:ObjectPageSubSection>
+                    <!-- Segmenthead Information -->
+                    <Uxap:ObjectPageSubSection
+                        id="ObjectPageSubSectionSeven"
+                        mode="Expanded"
+                        title="{i18n>segmentheadinformation}"
+                        titleUppercase="false"
+                    >
+                        <Uxap:blocks>
+                            <f:SimpleForm
+                                id="SimpleFormDisplay357"
+                                editable="false"
+                                layout="ResponsiveGridLayout"
+                                labelSpanXL="4"
+                                labelSpanL="4"
+                                labelSpanM="12"
+                                labelSpanS="12"
+                                adjustLabelSpan="false"
+                                emptySpanXL="0"
+                                emptySpanL="0"
+                                emptySpanM="0"
+                                emptySpanS="0"
+                                columnsXL="2"
+                                columnsL="2"
+                                columnsM="2"
+                                singleContainerFullSize="false"
+                            >
+                                <f:content>
+                                    <core:Title id="title5" />
+
+                                    <Label
+                                        id="labelsegmenthead"
+                                        text="{i18n>segmenthead}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="segmentheadInput"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelTclsbsh"
+                                        text="{i18n>tclsbsh}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="TclsbshInputone"
+                                        value="{}"
+                                    />
+
+                                    <Label
+                                        id="labelsrbsh"
+                                        text="{i18n>srbsh}"
+                                        class="sapUiTinyMarginTop"
+                                    />
+                                    <Input
+                                        id="srbshInputone"
+                                        value="{}"
+                                    />
+                                </f:content>
+                            </f:SimpleForm>
+                        </Uxap:blocks>
+                    </Uxap:ObjectPageSubSection>
+                </Uxap:ObjectPageSection>
+            </Uxap:sections>
+        </Uxap:ObjectPageLayout>
+    </Page>
+</mvc:View>
